@@ -115,3 +115,58 @@ Analyse monthly shipment trends across multiple years and evaluate the contribut
 **Business Insights:**
 
 The analysis identifies team-wise shipment contributions and highlights monthly variations in shipment activity. Delish contributes the highest shipment share, while Yummies contributes the lowest share among the four teams. These insights can support operational planning and workload distribution.
+
+### Page 4: Salesperson Performance & Geographical Analysis
+
+**Objective:**
+
+Evaluate salesperson performance using sales revenue, total boxes and amount per box while comparing performance across geographical regions.
+
+**Visualizations:**
+
+1. **Table – Salesperson Performance**
+   - Salesperson
+   - Total Amount
+   - Total Boxes
+   - Amount Per Box
+   - Displays individual salesperson performance and overall totals.
+
+2. **Matrix – Geographical Salesperson Analysis**
+   - Rows: Salesperson
+   - Columns: Geographical Region
+   - Values: Amount Per Box
+   - Uses conditional formatting to create a heatmap-style comparison.
+
+3. **Date Range Slicer**
+   - Field: cal_date
+   - Allows users to filter the report using a selected date range.
+
+**Operations Performed:**
+
+1. Created a table visual to display salesperson performance.
+2. Added Total Amount, Total Boxes and Amount Per Box.
+3. Enabled grand totals for overall performance.
+4. Created a Matrix visual for geographical comparisons.
+5. Added Salesperson to Rows and Geo to Columns.
+6. Added Amount Per Box to Values.
+7. Applied conditional formatting using background colours.
+8. Created a date range slicer using the Calendar table.
+9. Configured date filtering to analyse performance over selected periods.
+
+**Concepts Covered:**
+
+- Table Visualizations
+- Matrix Visualizations
+- Pivot-style Analysis
+- Conditional Formatting
+- Heatmap Visualization
+- Date Range Slicers
+- Data Aggregation
+- Grand Totals
+- Geographical Analysis
+- Salesperson Performance Analysis
+- Cross-dimensional Analysis
+
+**Business Insights:**
+
+The analysis helps evaluate individual salesperson contributions, compare sales efficiency across geographical regions and investigate performance during selected periods. The matrix provides a quick visual comparison of salesperson performance across countries.
