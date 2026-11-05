@@ -170,3 +170,55 @@ Evaluate salesperson performance using sales revenue, total boxes and amount per
 **Business Insights:**
 
 The analysis helps evaluate individual salesperson contributions, compare sales efficiency across geographical regions and investigate performance during selected periods. The matrix provides a quick visual comparison of salesperson performance across countries.
+
+### Page 5: Salesperson Profitability & Monthly Profit Analysis
+
+**Objective:**
+
+Analyse salesperson-wise profitability and evaluate monthly profit trends across multiple years.
+
+**Visualizations:**
+
+1. **Table – Salesperson Profitability**
+   - Salesperson
+   - Total Profit
+   - Profit Percentage
+   - Displays individual salesperson profitability and overall totals.
+
+2. **Horizontal Bar Chart – Salesperson Profit Comparison**
+   - Category: Salesperson
+   - Values: Total Profit and Profit Percentage
+   - Compares profitability across individual salespeople.
+
+3. **Column Chart – Monthly Total Profit Trend**
+   - X-axis: Year and Month Number.
+   - Y-axis: Total Profit.
+   - Displays monthly profit fluctuations across different years.
+
+**Operations Performed:**
+
+1. Created a table visual to display salesperson-wise profit information.
+2. Added Total Profit and Profit Percentage measures.
+3. Created a horizontal bar chart for salesperson profitability comparison.
+4. Added Salesperson as the category and profitability measures as values.
+5. Created a column chart to analyse monthly profit trends.
+6. Used Year and Month Number fields from the Calendar table.
+7. Added Total Profit to analyse changes in profitability over time.
+
+**Concepts Covered:**
+
+- Table Visualizations
+- Horizontal Bar Charts
+- Column Charts
+- DAX Measures
+- Profitability Analysis
+- Salesperson Performance Analysis
+- Date Hierarchy
+- Monthly Trend Analysis
+- Data Aggregation
+- Comparative Analysis
+- Time-Based Business Analysis
+
+**Business Insights:**
+
+The analysis helps identify high-profit salespeople, compare individual profitability and understand monthly profit fluctuations. These insights can support salesperson performance evaluation and business profitability planning.
