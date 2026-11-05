@@ -222,3 +222,52 @@ Analyse salesperson-wise profitability and evaluate monthly profit trends across
 **Business Insights:**
 
 The analysis helps identify high-profit salespeople, compare individual profitability and understand monthly profit fluctuations. These insights can support salesperson performance evaluation and business profitability planning.
+
+### Page 6: Team Performance & Product Sales Analysis
+
+**Objective:**
+
+Evaluate team-wise sales performance by comparing current-period sales with previous-year sales and identify the highest and lowest revenue-generating products.
+
+**Visualizations:**
+
+1. **Table – Team-wise YoY Sales Comparison**
+   - Team
+   - Total Amount
+   - Total Amount (Last Year)
+   - Total Amount (12 Month Variance)
+   - Compares current and previous-year sales performance across teams.
+
+2. **Horizontal Bar Chart – Product-wise Sales Analysis**
+   - Category: Product
+   - Values: Total Amount
+   - Displays product revenue in descending order.
+
+**Operations Performed:**
+
+1. Created a table visual for team-wise sales analysis.
+2. Added Total Amount, Total Amount (Last Year) and Total Amount (12 Month Variance) measures.
+3. Compared current-period and previous-year sales performance.
+4. Created a horizontal bar chart to analyse product-wise revenue.
+5. Added Product to the category axis and Total Amount to Values.
+6. Sorted the products in descending order based on sales revenue.
+7. Enabled totals in the team comparison table.
+
+**Concepts Covered:**
+
+- Table Visualizations
+- Horizontal Bar Charts
+- DAX Measures
+- Time Intelligence
+- Year-over-Year Comparison
+- Variance Analysis
+- Previous-Year Sales Analysis
+- Date Context
+- Data Aggregation
+- Descending Sorting
+- Team Performance Analysis
+- Product Revenue Analysis
+
+**Business Insights:**
+
+The analysis helps identify teams experiencing sales growth or decline compared with the previous year. It also highlights products contributing the most revenue, supporting business decisions related to sales strategies and product performance.
