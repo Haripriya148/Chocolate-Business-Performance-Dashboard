@@ -271,3 +271,62 @@ Evaluate team-wise sales performance by comparing current-period sales with prev
 **Business Insights:**
 
 The analysis helps identify teams experiencing sales growth or decline compared with the previous year. It also highlights products contributing the most revenue, supporting business decisions related to sales strategies and product performance.
+
+### Page 7: Monthly Sales Trends & Geographical Revenue Analysis
+
+**Objective:**
+
+Analyse monthly sales performance across multiple years, compare current-period revenue with previous-year revenue, calculate sales variances and evaluate geographical revenue contributions.
+
+**Visualizations:**
+
+1. **Table – Monthly Year-over-Year Sales Analysis**
+   - Year
+   - Month Name
+   - Total Amount
+   - Total Amount (Last Year)
+   - Total Amount (12 Month Variance)
+   - Displays monthly sales performance and previous-year comparisons.
+
+2. **Donut Chart – Geographical Revenue Distribution**
+   - Legend: Geo
+   - Values: Total Amount
+   - Displays revenue contribution and percentage distribution across six countries.
+
+3. **Line Chart – Current Year vs Previous Year Sales**
+   - X-axis: Year and Month Name
+   - Y-axis: Total Amount and Total Amount (Last Year)
+   - Compares monthly sales trends across different years.
+
+**Operations Performed:**
+
+1. Created a table visual for monthly sales analysis.
+2. Added Year and Month Name from the Calendar table.
+3. Added Total Amount, Total Amount (Last Year) and Total Amount (12 Month Variance).
+4. Created a donut chart to analyse geographical revenue contribution.
+5. Added Geo as the category and Total Amount as the value.
+6. Configured data labels to display revenue and percentage contribution.
+7. Created a line chart to compare current and previous-year sales.
+8. Added Year and Month Name to the X-axis.
+9. Added current-year and previous-year sales measures to the chart.
+10. Configured line styles to distinguish the two sales trends.
+
+**Concepts Covered:**
+
+- Table Visualizations
+- Donut Charts
+- Line Charts
+- DAX Time Intelligence
+- SAMEPERIODLASTYEAR()
+- CALCULATE()
+- Year-over-Year Analysis
+- Monthly Sales Variance
+- Geographical Revenue Analysis
+- Percentage Contribution
+- Date Hierarchy
+- Trend Analysis
+- Comparative Business Analysis
+
+**Business Insights:**
+
+The analysis identifies monthly sales growth and decline, compares current and previous-year performance and highlights geographical revenue contributions. India contributes the largest share of total revenue, while Canada contributes the smallest share among the six regions.
