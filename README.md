@@ -24,3 +24,48 @@
 
 **Business Insights:**
 The analysis helps identify high-performing and low-performing products within selected geographical regions, supporting product-level sales analysis and business decision-making.
+
+### Page 2: Geographical Sales & Product Profitability Analysis
+
+**Objective:**
+
+Analyse geographical sales, cost and profit performance while identifying high-performing and low-performing products based on profitability.
+
+**Visualizations:**
+
+1. **Clustered Column Chart – Geographical Analysis**
+   - X-axis: Geo
+   - Values: Sum of Amount, Sum of Cost and Total Profit.
+   - Compares revenue, cost and profit across geographical regions.
+
+2. **Product Profitability Table**
+   - Product
+   - Total Profit
+   - Profit Percentage
+   - Uses conditional formatting with data bars to highlight positive and negative profitability.
+
+**Operations Performed:**
+
+1. Created a clustered column chart to compare sales, cost and profit across countries.
+2. Added Geo as the geographical category.
+3. Added Amount, Cost and Total Profit as numerical measures.
+4. Created a table visual for product-level profitability analysis.
+5. Added Product, Total Profit and Profit Percentage fields.
+6. Applied conditional formatting using data bars.
+7. Used different colours to distinguish positive and negative profitability.
+
+**Concepts Covered:**
+
+- Clustered Column Charts
+- Data Aggregation using SUM
+- Multiple Measures
+- Geographical Analysis
+- Table Visualizations
+- Conditional Formatting
+- Data Bars
+- Profitability Analysis
+- Positive and Negative Values
+
+**Business Insights:**
+
+The analysis helps compare geographical business performance, identify profitable products and highlight products with negative profitability that may require further investigation.
