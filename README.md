@@ -1,83 +1,157 @@
 # Chocolate-Business-Performance-Dashboard
-## Page 8: Executive Sales Performance Dashboard(Final Dashboard)
+Project Overview
 
-### Objective
+This project focuses on analysing chocolate sales data using Microsoft Power BI. An interactive, multi-page dashboard was developed to understand sales performance, profitability, shipment trends, product contributions, geographical performance and salesperson effectiveness.
 
-Developed an interactive executive dashboard to monitor overall business performance through key performance indicators, sales trends, shipment distribution, product performance, geographical revenue and salesperson analysis.
+The dashboard transforms raw business data into meaningful insights through data cleaning, data modelling, DAX calculations and interactive visualizations.
 
-### Visualizations Implemented
+Objectives
 
-**1. KPI Cards**
-- Total Amount
-- Total Boxes
-- Shipment Count
-- Total Profit
-- Profit Percentage
+Analyse overall sales revenue and profitability.
 
-**2. Date Range Slicer**
-- Implemented a Between-type date slicer using the Calendar table.
-- Enabled dynamic filtering across dashboard visuals.
+Compare current-year and previous-year sales performance.
 
-**3. Current Year vs Previous Year Sales**
-- Implemented a line chart to compare monthly revenue.
-- Used Start of Month as the X-axis.
-- Compared Total Amount with Total Amount (Last Year).
+Identify top-performing products and salespersons.
 
-**4. Shipment Distribution Histogram**
-- Created numerical bins using the Boxes column.
-- Analysed shipment frequency across different box intervals.
-- Visualized shipment distribution using a column chart.
+Analyse shipment volume and distribution.
 
-**5. Top 5 Products Treemap**
-- Implemented a Treemap to display the five highest revenue-generating products.
-- Applied Top N filtering based on Total Amount.
+Evaluate geographical sales performance.
 
-**6. Current Year vs Previous Year Box Sales**
-- Compared monthly box sales with previous-year values.
-- Used a line chart to identify changes in sales volume.
+Monitor team-wise and product-wise profitability.
 
-**7. Top 6 Salesperson Performance**
-- Created a table displaying salesperson pictures, names, revenue, boxes sold and profitability.
-- Applied Top N filtering to identify leading salespeople.
+Develop an interactive dashboard for business decision-making.
 
-**8. Product Profitability Analysis**
-- Created a product-level performance table.
-- Displayed Total Amount and Profit Percentage.
-- Applied conditional formatting and data bars to highlight profitability.
+Tools and Technologies
 
-### Operations Performed
+Microsoft Power BI Desktop
 
-1. Created KPI cards using existing DAX measures.
-2. Configured a date range slicer for interactive date filtering.
-3. Implemented current-year and previous-year revenue comparisons.
-4. Created numerical bins for shipment distribution analysis.
-5. Applied Top N filters to identify leading products.
-6. Compared monthly box sales against previous-year performance.
-7. Created a salesperson performance table with profile images.
-8. Applied conditional formatting to product profitability.
-9. Configured visual-level formatting and dashboard layout.
-10. Integrated multiple visuals into a consolidated executive dashboard.
+Power Query Editor
 
-### Technical Concepts Covered
+DAX (Data Analysis Expressions)
 
-- KPI Development
-- DAX Measures
-- Time Intelligence
-- Year-over-Year Analysis
-- Date Slicers
-- Top N Filtering
-- Data Binning
-- Histogram Analysis
-- Treemap Visualization
-- Conditional Formatting
-- Data Bars
-- Image Integration
-- Interactive Dashboards
-- Sales and Profitability Analysis
+Data Modelling
 
-### Business Value
+Data Visualization
 
-The executive dashboard provides a consolidated view of sales and profitability, helps identify high-performing products and salespeople, analyses shipment distribution and enables management to compare monthly performance against previous-year results.
+Dataset Structure
+
+The project uses multiple related tables:
+
+Table
+
+Description
+
+Shipments
+
+Sales amount, boxes, shipment ID and order details
+
+Products
+
+Product names, categories and cost per box
+
+People
+
+Salesperson details, team and salesperson ID
+
+Locations
+
+Geographical information and region
+
+Calendar
+
+Date, year, month and weekday information
+
+Project Workflow
+
+Step 1: Data Import
+
+Imported the business dataset into Power BI Desktop.
+
+Connected the required data tables.
+
+Loaded shipment, product, salesperson, location and calendar information.
+
+Examined the available columns and data types.
+
+Step 2: Data Transformation Using Power Query
+
+Used Power Query Editor to prepare the dataset for analysis.
+
+Operations performed:
+
+Inspected the imported columns.
+
+Created a calculated column named Cost.
+
+Calculated the cost using the number of boxes and cost per box.
+
+Cost = Amount × Cost_Per_Box
+
+Renamed the calculated column as Cost.
+
+Removed the original Cost_Per_Box column after calculating the required cost.
+
+Applied the transformations and loaded the prepared data into Power BI.
+
+Concepts covered: Power Query, Custom Columns, Column Renaming, Column Removal and Data Preparation.
+
+Step 3: Data Modelling
+
+Used multiple tables to organise the business data and establish relationships.
+
+Tables used:
+
+Shipments
+
+Products
+
+People
+
+Locations
+
+Calendar
+
+The model supports analysis across products, salespersons, geographical locations and dates.
+
+Step 4: DAX Measures
+
+Created calculated measures to perform business calculations.
+
+Important measures and functions used:
+
+Total Amount
+
+Total_Amount = SUM(shipments[Amount])
+
+Total Cost
+
+Total_cost = SUM(shipments[Cost])
+
+Profit
+
+Profit = [Total_Amount] - [Total_cost]
+
+Profit Percentage
+
+profit% = DIVIDE([Profit], [Total_Amount], 0)
+
+Shipment Count
+
+shipments_count = COUNTROWS(shipments)
+
+Previous Year Analysis
+
+Used SAMEPERIODLASTYEAR() to calculate previous-year values based on the selected date context.
+
+Example:
+
+Total Amount (last year) =
+CALCULATE(
+    [Total_Amount],
+    SAMEPERIODLASTYEAR(calendar[cal_date])
+)
+
+Concepts covered: SUM, DIVIDE, COUNTROWS, CALCULATE, SAMEPERIODLASTYEAR and Filter Context.
 ### Page 1: Product-wise Sales Analysis
 
 **Objective:** Analyse product-wise sales performance and identify the highest- and lowest-revenue-generating products across geographical regions.
@@ -409,3 +483,83 @@ Analyse monthly sales performance across multiple years, compare current-period 
 **Business Insights:**
 
 The analysis identifies monthly sales growth and decline, compares current and previous-year performance and highlights geographical revenue contributions. India contributes the largest share of total revenue, while Canada contributes the smallest share among the six regions.
+
+## Page 8: Executive Sales Performance Dashboard
+
+### Objective
+
+Developed an interactive executive dashboard to monitor overall business performance through key performance indicators, sales trends, shipment distribution, product performance, geographical revenue and salesperson analysis.
+
+### Visualizations Implemented
+
+**1. KPI Cards**
+- Total Amount
+- Total Boxes
+- Shipment Count
+- Total Profit
+- Profit Percentage
+
+**2. Date Range Slicer**
+- Implemented a Between-type date slicer using the Calendar table.
+- Enabled dynamic filtering across dashboard visuals.
+
+**3. Current Year vs Previous Year Sales**
+- Implemented a line chart to compare monthly revenue.
+- Used Start of Month as the X-axis.
+- Compared Total Amount with Total Amount (Last Year).
+
+**4. Shipment Distribution Histogram**
+- Created numerical bins using the Boxes column.
+- Analysed shipment frequency across different box intervals.
+- Visualized shipment distribution using a column chart.
+
+**5. Top 5 Products Treemap**
+- Implemented a Treemap to display the five highest revenue-generating products.
+- Applied Top N filtering based on Total Amount.
+
+**6. Current Year vs Previous Year Box Sales**
+- Compared monthly box sales with previous-year values.
+- Used a line chart to identify changes in sales volume.
+
+**7. Top 6 Salesperson Performance**
+- Created a table displaying salesperson pictures, names, revenue, boxes sold and profitability.
+- Applied Top N filtering to identify leading salespeople.
+
+**8. Product Profitability Analysis**
+- Created a product-level performance table.
+- Displayed Total Amount and Profit Percentage.
+- Applied conditional formatting and data bars to highlight profitability.
+
+### Operations Performed
+
+1. Created KPI cards using existing DAX measures.
+2. Configured a date range slicer for interactive date filtering.
+3. Implemented current-year and previous-year revenue comparisons.
+4. Created numerical bins for shipment distribution analysis.
+5. Applied Top N filters to identify leading products.
+6. Compared monthly box sales against previous-year performance.
+7. Created a salesperson performance table with profile images.
+8. Applied conditional formatting to product profitability.
+9. Configured visual-level formatting and dashboard layout.
+10. Integrated multiple visuals into a consolidated executive dashboard.
+
+### Technical Concepts Covered
+
+- KPI Development
+- DAX Measures
+- Time Intelligence
+- Year-over-Year Analysis
+- Date Slicers
+- Top N Filtering
+- Data Binning
+- Histogram Analysis
+- Treemap Visualization
+- Conditional Formatting
+- Data Bars
+- Image Integration
+- Interactive Dashboards
+- Sales and Profitability Analysis
+
+### Business Value
+
+The executive dashboard provides a consolidated view of sales and profitability, helps identify high-performing products and salespeople, analyses shipment distribution and enables management to compare monthly performance against previous-year results.
