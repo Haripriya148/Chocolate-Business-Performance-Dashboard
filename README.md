@@ -85,7 +85,7 @@ Created a calculated column named Cost.
 
 Calculated the cost using the number of boxes and cost per box.
 
-Cost = Amount × Cost_Per_Box
+Cost = Boxes × Cost_Per_Box
 
 Renamed the calculated column as Cost.
 
