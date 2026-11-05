@@ -69,3 +69,49 @@ Analyse geographical sales, cost and profit performance while identifying high-p
 **Business Insights:**
 
 The analysis helps compare geographical business performance, identify profitable products and highlight products with negative profitability that may require further investigation.
+
+### Page 3: Shipment Trend & Team Performance Analysis
+
+**Objective:**
+
+Analyse monthly shipment trends across multiple years and evaluate the contribution of individual teams to the overall shipment volume.
+
+**Visualizations:**
+
+1. **Line Chart – Monthly Shipment Trends**
+   - X-axis: Year and Month Number.
+   - Y-axis: Shipment Count.
+   - Displays monthly shipment fluctuations across 2023, 2024 and 2025.
+   - Helps identify changes in shipment activity over time.
+
+2. **Donut Chart – Team-wise Shipment Distribution**
+   - Legend: Team.
+   - Values: Shipment Count.
+   - Displays the shipment contribution of each team.
+   - Shows shipment distribution through counts and percentages.
+
+**Operations Performed:**
+
+1. Created a line chart to visualize monthly shipment trends.
+2. Used Year and Month Number fields from the Calendar table to organize the timeline.
+3. Added the Shipment Count measure to analyse monthly shipment volumes.
+4. Created a donut chart to analyse team-wise shipment distribution.
+5. Added Team as the category and Shipment Count as the numerical value.
+6. Configured data labels to display shipment counts and percentage contributions.
+
+**Concepts Covered:**
+
+- Line Chart Visualization
+- Donut Chart Visualization
+- Time-Series Analysis
+- Date Hierarchy
+- Monthly Trend Analysis
+- Data Aggregation
+- Percentage Contribution
+- Data Labels
+- Categorical Data Analysis
+- Data Modelling and Relationships
+
+**Business Insights:**
+
+The analysis identifies team-wise shipment contributions and highlights monthly variations in shipment activity. Delish contributes the highest shipment share, while Yummies contributes the lowest share among the four teams. These insights can support operational planning and workload distribution.
