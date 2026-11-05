@@ -1,4 +1,83 @@
 # Chocolate-Business-Performance-Dashboard
+## Page 8: Executive Sales Performance Dashboard(Final Dashboard)
+
+### Objective
+
+Developed an interactive executive dashboard to monitor overall business performance through key performance indicators, sales trends, shipment distribution, product performance, geographical revenue and salesperson analysis.
+
+### Visualizations Implemented
+
+**1. KPI Cards**
+- Total Amount
+- Total Boxes
+- Shipment Count
+- Total Profit
+- Profit Percentage
+
+**2. Date Range Slicer**
+- Implemented a Between-type date slicer using the Calendar table.
+- Enabled dynamic filtering across dashboard visuals.
+
+**3. Current Year vs Previous Year Sales**
+- Implemented a line chart to compare monthly revenue.
+- Used Start of Month as the X-axis.
+- Compared Total Amount with Total Amount (Last Year).
+
+**4. Shipment Distribution Histogram**
+- Created numerical bins using the Boxes column.
+- Analysed shipment frequency across different box intervals.
+- Visualized shipment distribution using a column chart.
+
+**5. Top 5 Products Treemap**
+- Implemented a Treemap to display the five highest revenue-generating products.
+- Applied Top N filtering based on Total Amount.
+
+**6. Current Year vs Previous Year Box Sales**
+- Compared monthly box sales with previous-year values.
+- Used a line chart to identify changes in sales volume.
+
+**7. Top 6 Salesperson Performance**
+- Created a table displaying salesperson pictures, names, revenue, boxes sold and profitability.
+- Applied Top N filtering to identify leading salespeople.
+
+**8. Product Profitability Analysis**
+- Created a product-level performance table.
+- Displayed Total Amount and Profit Percentage.
+- Applied conditional formatting and data bars to highlight profitability.
+
+### Operations Performed
+
+1. Created KPI cards using existing DAX measures.
+2. Configured a date range slicer for interactive date filtering.
+3. Implemented current-year and previous-year revenue comparisons.
+4. Created numerical bins for shipment distribution analysis.
+5. Applied Top N filters to identify leading products.
+6. Compared monthly box sales against previous-year performance.
+7. Created a salesperson performance table with profile images.
+8. Applied conditional formatting to product profitability.
+9. Configured visual-level formatting and dashboard layout.
+10. Integrated multiple visuals into a consolidated executive dashboard.
+
+### Technical Concepts Covered
+
+- KPI Development
+- DAX Measures
+- Time Intelligence
+- Year-over-Year Analysis
+- Date Slicers
+- Top N Filtering
+- Data Binning
+- Histogram Analysis
+- Treemap Visualization
+- Conditional Formatting
+- Data Bars
+- Image Integration
+- Interactive Dashboards
+- Sales and Profitability Analysis
+
+### Business Value
+
+The executive dashboard provides a consolidated view of sales and profitability, helps identify high-performing products and salespeople, analyses shipment distribution and enables management to compare monthly performance against previous-year results.
 ### Page 1: Product-wise Sales Analysis
 
 **Objective:** Analyse product-wise sales performance and identify the highest- and lowest-revenue-generating products across geographical regions.
